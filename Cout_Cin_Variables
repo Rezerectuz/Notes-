@@ -1,0 +1,66 @@
+  / Terminoligy: std = standard , cout = channelOutput , cin = channelInput
+
+/* Types of Variables : int(integer) = whole numbers(no virgules, ex: 1.9),
+                        double = whole numbers and numbers with virgules
+                        long = same as double , whole numbers and numbers with virgules
+                        float = same as double and long, whole numbers and numbers with virgules
+                        bool = only possible value is 0 or 1, aka, true or false
+                        char = single character, ex: a , b , 1 , \
+                        string = single characters or multiple characters, aka words        */
+
+// Goal: Learn how to output and input information, learn aout different variables and how to use them.
+
+
+#include <iostream> // Default command YOU HAVE TO have in your program
+
+
+// TODO: Show Hello World on the screen
+void HelloWorld() // Type and name of function
+{ 
+    std::cout << "Hello World"; // We are outputting "Hello World" on the screen on 1 line.
+
+    std::cout << std::endl <<  "Hello" << std::endl; // Endl stands for endline which ends the line (A.K.A enter).
+    std::cout << "World";
+
+}
+
+// TODO: Add 2 whole numbers and get their sum
+
+void AddTwoValues()
+{
+    // To make a variable, declare variable type (int), then name and finally, the value
+
+    // Variables
+    int FirstNumber = 1; 
+    int SecondNumber = 2;
+
+    int Sum = FirstNumber + SecondNumber; // Define Sum as FirstNumber + SecondNumber (this also works for x - y , x * y ,x / y)
+
+    // Output FirstNumber + SecondNumber = Sum
+    std::cout << FirstNumber << " + " << SecondNumber << " = " << Sum;
+}
+void UserAddition()
+{
+    // Make variables with default values (0).
+    int FirstValue = 0;
+    int SecondValue = 0;
+
+    // Ask User to input a value and place that value in FirstValue
+    std::cout << "Enter a first whole number: ";
+    std::cin >> FirstValue;
+
+    // Ask User to input a value and place that value in SecondValue
+    std::cout << "Enter a second whole number: "; 
+    std::cin >> SecondValue;
+
+    // Make a variable with both users variable sum
+    int Sum = FirstValue + SecondValue;
+
+    // Output the result
+    std::cout << FirstValue << " + " << SecondValue << " = " << Sum;
+}
+
+void main()
+{
+
+}
